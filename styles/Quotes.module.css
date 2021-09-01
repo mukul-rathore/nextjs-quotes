@@ -1,0 +1,24 @@
+.single {
+    padding: 20px 16px;
+    background: #fff;
+    display: block;
+    margin: 20px 10px;
+    border-left: 8px solid #fff;
+  }
+  .single:hover {
+    border-left: 8px solid #4979ff;
+  }
+
+  .scrollbutton {
+    position: fixed; 
+     width: 100%;
+     left: 90%;
+     bottom: 40px;
+     height: 20px;
+     font-size: 3rem;
+     z-index: 1;
+     cursor: pointer;
+     color: red;
+  }
+
+  
