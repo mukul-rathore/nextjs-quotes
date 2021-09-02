@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import ScrollButton from '../../components/ScrollButton'
 import styles from '../../styles/Quotes.module.css'
 
@@ -29,7 +30,9 @@ const Quotes = ({quotes}) => {
                 <h1>All Quotes</h1> 
                 {
                     quotes.map((quote, idx) => (
-                        <div key={idx} className={styles.single}>{quote.text}</div>
+                        <Link key={idx} href={`/quotes/${idx}`} >
+                            <a  className={styles.single}>{quote.text}</a>
+                        </Link>
                     ))
                 }
             </div>
